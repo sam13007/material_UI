@@ -10,6 +10,14 @@ function TypographyMui() {
       <Typography variant="h4">H4 Heading</Typography>
       <Typography variant="h5">H5 Heading</Typography>
       <Typography variant="h6">H6 Heading</Typography>
+      <Typography variant="subtitle1">H6 Heading</Typography>
+      <Typography variant="subtitle2">H6 Heading</Typography>
+      <Typography variant="body1">
+        Lorem ipsum dolor sit amet. lorem20
+      </Typography>
+      <Typography variant="body2">
+        Lorem ipsum dolor sit amet. lorem20
+      </Typography>
     </div>
   );
 }
