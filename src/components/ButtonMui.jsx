@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Stack,
   Typography,
   IconButton,
   ButtonGroup,
+  ToggleButtonGroup,
+  ToggleButton,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
@@ -12,6 +14,11 @@ import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 
 function ButtonMui() {
+  const [format, setFormat] = useState(["bold"]);
+  const handleFormat = (e, formatValue) => {
+    console.log(formatValue);
+    setFormat(formatValue);
+  };
   return (
     <Stack spacing={2} sx={{ padding: 4 }}>
       <Typography variant="h4">Button variants</Typography>
@@ -81,19 +88,17 @@ function ButtonMui() {
         <Button>Right</Button>
         <Button>center</Button>
       </ButtonGroup>
-      <Stack direction="row" spacing={4}>
-        <ButtonGroup variant="contained" orientation="vertical">
-          <Button>
-            <FormatBoldIcon />
-          </Button>
-          <Button>
-            <FormatItalicIcon />
-          </Button>
-          <Button>
-            <FormatUnderlinedIcon />
-          </Button>
-        </ButtonGroup>
-      </Stack>
+      <ToggleButtonGroup value={format} color="primary" onChange={handleFormat}>
+        <ToggleButton value="bold">
+          <FormatBoldIcon />
+        </ToggleButton>
+        <ToggleButton value="italic">
+          <FormatItalicIcon />
+        </ToggleButton>
+        <ToggleButton value="underline">
+          <FormatUnderlinedIcon />
+        </ToggleButton>
+      </ToggleButtonGroup>
     </Stack>
   );
 }
