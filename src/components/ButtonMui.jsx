@@ -1,6 +1,16 @@
 import React from "react";
-import { Button, Stack, Typography, IconButton } from "@mui/material";
+import {
+  Button,
+  Stack,
+  Typography,
+  IconButton,
+  ButtonGroup,
+} from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
+
 function ButtonMui() {
   return (
     <Stack spacing={2} sx={{ padding: 4 }}>
@@ -65,6 +75,24 @@ function ButtonMui() {
         >
           <SendIcon />
         </IconButton>
+      </Stack>
+      <ButtonGroup variant="contained">
+        <Button>Left</Button>
+        <Button>Right</Button>
+        <Button>center</Button>
+      </ButtonGroup>
+      <Stack direction="row" spacing={4}>
+        <ButtonGroup variant="contained" orientation="vertical">
+          <Button>
+            <FormatBoldIcon />
+          </Button>
+          <Button>
+            <FormatItalicIcon />
+          </Button>
+          <Button>
+            <FormatUnderlinedIcon />
+          </Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
