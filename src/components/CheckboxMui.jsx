@@ -4,7 +4,6 @@ import {
   FormGroup,
   FormControlLabel,
   Checkbox,
-  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 
