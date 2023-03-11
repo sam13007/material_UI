@@ -1,14 +1,14 @@
 import "./App.css";
 // import ButtonMui from "./components/ButtonMui";
 // import TypographyMui from "./components/TypographyMui";
-import TextFieldMui from "./components/TextFieldMui";
+import TextfieldMui from "./components/TextfieldMui";
 
 function App() {
   return (
     <div className="App">
       {/* <ButtonMui />
       <TypographyMui /> */}
-      <TextFieldMui />
+      <TextfieldMui />
     </div>
   );
 }

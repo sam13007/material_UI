@@ -1,7 +1,7 @@
 import React from "react";
 
 function TextfieldMui() {
-  return <div>TextfieldMui</div>;
+  return <div>Textfield</div>;
 }
 
 export default TextfieldMui;
