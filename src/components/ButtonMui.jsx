@@ -16,7 +16,6 @@ import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 function ButtonMui() {
   const [format, setFormat] = useState(["bold"]);
   const handleFormat = (e, formatValue) => {
-    console.log(formatValue);
     setFormat(formatValue);
   };
   return (
@@ -88,6 +87,7 @@ function ButtonMui() {
         <Button>Right</Button>
         <Button>center</Button>
       </ButtonGroup>
+      <Typography variant="h4">Toggle Button</Typography>
       <ToggleButtonGroup value={format} color="primary" onChange={handleFormat}>
         <ToggleButton value="bold">
           <FormatBoldIcon />

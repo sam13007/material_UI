@@ -1,4 +1,5 @@
 import "./App.css";
+import TextfieldMui from "./components/TextfieldMui";
 import ButtonMui from "./components/ButtonMui";
 import TypographyMui from "./components/TypographyMui";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <ButtonMui />
       <TypographyMui />
+      <TextfieldMui />
     </div>
   );
 }
