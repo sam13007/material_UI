@@ -1,12 +1,21 @@
-import { Stack, TextField, Typography } from "@mui/material";
-import React from "react";
+import { InputAdornment, Stack, TextField, Typography } from "@mui/material";
+import React, { useState } from "react";
 
 function TextfieldMui() {
+  const [name, setName] = useState("");
   return (
     <Stack spacing={4} sx={{ padding: 4 }}>
       <Typography variant="h4">Text field variants</Typography>
       <Stack direction="row" spacing={2}>
-        <TextField label="Name" type="text" variant="outlined" />
+        <TextField
+          label="Name"
+          type="text"
+          variant="outlined"
+          value={name}
+          error={!name}
+          onChange={(e) => setName(e.target.value)}
+          helperText={!name ? "Please enter your name" : `Nice name ${name}`}
+        />
         <TextField
           label="Name"
           type="text"
@@ -53,6 +62,20 @@ function TextfieldMui() {
           label="Multiine text field"
           color="success"
           focused
+        />
+        <TextField
+          label="Name"
+          InputProps={{
+            startAdornment: <InputAdornment position="start">$</InputAdornment>,
+          }}
+          focused
+          color="warning"
+        />
+        <TextField
+          label="Name"
+          InputProps={{
+            endAdornment: <InputAdornment position="end">$</InputAdornment>,
+          }}
         />
       </Stack>
     </Stack>
