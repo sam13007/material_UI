@@ -21,6 +21,28 @@ function AccordionMui() {
           neque a reprehenderit.
         </AccordionDetails>
       </Accordion>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          Accordion
+        </AccordionSummary>
+        <AccordionDetails>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+          quibusdam quia, quos natus ducimus amet et veniam? Debitis, maiores.
+          Voluptates aspernatur alias eius, consectetur nesciunt nihil unde
+          neque a reprehenderit.
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          Accordion
+        </AccordionSummary>
+        <AccordionDetails>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+          quibusdam quia, quos natus ducimus amet et veniam? Debitis, maiores.
+          Voluptates aspernatur alias eius, consectetur nesciunt nihil unde
+          neque a reprehenderit.
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 }
