@@ -3,8 +3,8 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 function AppbarMui() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box>
+      <AppBar>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             LOGO
