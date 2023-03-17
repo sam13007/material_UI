@@ -12,8 +12,8 @@ function Breadcrumb() {
         maxItems={3}
         itemsAfterCollapse={2}
       >
-        <Link variant="body1">Home</Link>
         <Link variant="body1">Profile</Link>
+        <Link variant="body1">Home</Link>
         <Link variant="body1">User</Link>
         <Link variant="body1">Shyam</Link>
         <Link variant="body1">Basket</Link>
